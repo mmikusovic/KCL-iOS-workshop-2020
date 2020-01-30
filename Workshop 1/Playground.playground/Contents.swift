@@ -89,3 +89,34 @@ case 65...75:
 default:
     print("hot")
 }
+
+
+let const1 = 25
+let const2 = 14
+
+var largest: Int
+if const1 > const2 {
+    largest = const1
+} else {
+    largest = const2
+}
+print(largest)
+largest = const1 > const2 ? const1 : const2
+print(largest)
+
+
+func loopFor(until number: Int) {
+    for value in 0..<number {
+        print(value)
+    }
+}
+
+func loopWhile(until number: Int) {
+    var i = 0
+    while i < number {
+        print(i)
+        i += 1
+    }
+}
+loopFor(until: 3)
+loopWhile(until: 3)
