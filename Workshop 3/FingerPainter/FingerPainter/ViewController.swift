@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     
     private var start: CGPoint?
+    private var color = UIColor.red.cgColor
     
     @IBAction func clear(_ sender: Any) {
         imageView.image = nil
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         if let context = UIGraphicsGetCurrentContext() {
             imageView.image?.draw(in: CGRect(x: 0, y: 0, width: imageView.frame.width, height: imageView.frame.height))
             context.setLineWidth(5)
-            context.setStrokeColor(UIColor.red.cgColor)
+            context.setStrokeColor(color)
             context.beginPath()
             context.move(to: start)
             context.addLine(to: end)
@@ -48,6 +49,36 @@ class ViewController: UIViewController {
             UIGraphicsEndImageContext()
             imageView.image = newImage
         }
+    }
+    
+    private func resetButton() {
+        for v in view.subviews {
+            if v is UIStackView {
+                for b in v.subviews {
+                    if b is UIButton {
+                        b.backgroundColor = UIColor.clear
+                    }
+                }
+            }
+        }
+    }
+    
+    @IBAction func redColor(_ sender: UIButton) {
+        color = UIColor.red.cgColor
+        resetButton()
+        sender.backgroundColor = UIColor.red
+    }
+    
+    @IBAction func blueColor(_ sender: UIButton) {
+        color = UIColor.blue.cgColor
+        resetButton()
+        sender.backgroundColor = UIColor.blue
+    }
+    
+    @IBAction func greenColor(_ sender: UIButton) {
+        color = UIColor.green.cgColor
+        resetButton()
+        sender.backgroundColor = UIColor.green
     }
 }
 
