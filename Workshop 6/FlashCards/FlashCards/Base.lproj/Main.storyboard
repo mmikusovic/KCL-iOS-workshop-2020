@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YxG-AG-NOb">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Term-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TermViewController" id="BYZ-38-t0r" customClass="TermViewController" customModule="FlashCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pe-ZL-F0a">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4pe-ZL-F0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6oS-L7-fUw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4pe-ZL-F0a" secondAttribute="bottom" id="ZMK-O0-2aZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4pe-ZL-F0a" secondAttribute="trailing" id="oXP-43-M43"/>
+                            <constraint firstItem="4pe-ZL-F0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v5X-M8-1Nj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Term" id="1Du-iG-kWe">
+                        <barButtonItem key="rightBarButtonItem" title="Definition" id="USh-AX-Wul">
+                            <connections>
+                                <segue destination="TId-3v-JBh" kind="show" id="EVx-0f-rB7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="termLabel" destination="4pe-ZL-F0a" id="h8O-qn-iVF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="139"/>
+        </scene>
+        <!--Definition-->
+        <scene sceneID="5FB-zo-cqp">
+            <objects>
+                <viewController storyboardIdentifier="DefinitionViewController" id="TId-3v-JBh" customClass="DefinitionViewController" customModule="FlashCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vnc-7D-TO4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJz-L9-Hh0">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EtR-dY-kQW" firstAttribute="trailing" secondItem="BJz-L9-Hh0" secondAttribute="trailing" id="DcZ-VW-qNO"/>
+                            <constraint firstItem="EtR-dY-kQW" firstAttribute="bottom" secondItem="BJz-L9-Hh0" secondAttribute="bottom" id="HVN-vX-ouL"/>
+                            <constraint firstItem="BJz-L9-Hh0" firstAttribute="leading" secondItem="EtR-dY-kQW" secondAttribute="leading" id="bNA-e9-fWt"/>
+                            <constraint firstItem="BJz-L9-Hh0" firstAttribute="top" secondItem="EtR-dY-kQW" secondAttribute="top" id="dnX-wa-vkY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EtR-dY-kQW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Definition" id="0yb-Y6-lFH">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="5TB-RK-dkD">
+                            <connections>
+                                <segue destination="q13-gh-Kur" kind="show" id="BNJ-2Q-4fJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="definitionLabel" destination="BJz-L9-Hh0" id="Xgb-zZ-Gf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRQ-yJ-aB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="139"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="z0K-H7-u4d">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="q13-gh-Kur" customClass="SearchViewController" customModule="FlashCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0h-BH-ubO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IoG-zj-4Xe">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hfi-ox-N29" firstAttribute="trailing" secondItem="IoG-zj-4Xe" secondAttribute="trailing" id="Cgw-hB-i4b"/>
+                            <constraint firstItem="IoG-zj-4Xe" firstAttribute="leading" secondItem="hfi-ox-N29" secondAttribute="leading" id="X3G-ng-46w"/>
+                            <constraint firstItem="IoG-zj-4Xe" firstAttribute="top" secondItem="hfi-ox-N29" secondAttribute="top" id="uch-36-REm"/>
+                            <constraint firstItem="hfi-ox-N29" firstAttribute="bottom" secondItem="IoG-zj-4Xe" secondAttribute="bottom" id="zIL-Go-MHX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfi-ox-N29"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="NpA-R5-yLN"/>
+                    <connections>
+                        <outlet property="webView" destination="IoG-zj-4Xe" id="5wB-LT-I5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMe-w3-IqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q7D-qv-dds">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YxG-AG-NOb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HAe-LG-hoe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VzO-zj-zxL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v86-DM-3kT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
