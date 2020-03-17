@@ -12,7 +12,6 @@
 		5B97833423CB7A04007A980F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B97833223CB7A04007A980F /* Main.storyboard */; };
 		5B97833623CB7A05007A980F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B97833523CB7A05007A980F /* Assets.xcassets */; };
 		5B97833923CB7A05007A980F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B97833723CB7A05007A980F /* LaunchScreen.storyboard */; };
-		5B97834123CB7B30007A980F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B97834023CB7B30007A980F /* GoogleService-Info.plist */; };
 		5B97834323CB7CF7007A980F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97834223CB7CF7007A980F /* Task.swift */; };
 		5B97834523CB84E8007A980F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B97834423CB84E8007A980F /* SceneDelegate.swift */; };
 		F7F362CE03FEF9F94DBE56CF /* Pods_FireToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA5B78FAD1ABB6EDA695D29 /* Pods_FireToDo.framework */; };
@@ -27,7 +26,6 @@
 		5B97833523CB7A05007A980F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B97833823CB7A05007A980F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B97833A23CB7A05007A980F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B97834023CB7B30007A980F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B97834223CB7CF7007A980F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5B97834423CB84E8007A980F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6F87B59A4BC3B73E6E4C1B07 /* Pods-FireToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireToDo.release.xcconfig"; path = "Target Support Files/Pods-FireToDo/Pods-FireToDo.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				5B97833223CB7A04007A980F /* Main.storyboard */,
 				5B97833523CB7A05007A980F /* Assets.xcassets */,
 				5B97833723CB7A05007A980F /* LaunchScreen.storyboard */,
-				5B97834023CB7B30007A980F /* GoogleService-Info.plist */,
 				5B97833A23CB7A05007A980F /* Info.plist */,
 			);
 			path = FireToDo;
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B97833923CB7A05007A980F /* LaunchScreen.storyboard in Resources */,
-				5B97834123CB7B30007A980F /* GoogleService-Info.plist in Resources */,
 				5B97833623CB7A05007A980F /* Assets.xcassets in Resources */,
 				5B97833423CB7A04007A980F /* Main.storyboard in Resources */,
 			);
