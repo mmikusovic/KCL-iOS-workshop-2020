@@ -18,6 +18,7 @@ class DetailPageViewController: UIPageViewController {
         delegate = self
         dataSource = self
         setViewControllers([getVC(with: currentIndex)], direction: .forward, animated: true, completion: nil)
+        setupPageControl()
     }
     
     private func getVC(with index: Int) -> DetailViewController {
@@ -26,6 +27,14 @@ class DetailPageViewController: UIPageViewController {
         vc.image = images[currentIndex]
         vc.pageIndex = currentIndex
         return vc
+    }
+    
+    private func setupPageControl() {
+        let appearance = UIPageControl.appearance()
+        appearance.pageIndicatorTintColor = .lightGray
+        appearance.currentPageIndicatorTintColor = .black
+        appearance.backgroundColor = .white
+        view.backgroundColor = .white
     }
 }
 
@@ -41,5 +50,13 @@ extension DetailPageViewController: UIPageViewControllerDelegate, UIPageViewCont
         let index = (viewController as! DetailViewController).pageIndex
         if index + 1 >= images.count { return nil }
         return getVC(with: index + 1)
+    }
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return images.count
+    }
+    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        return currentIndex
     }
 }
